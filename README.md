@@ -21,6 +21,8 @@ install.packages(c("ggplot2",   "binom", "plyr", "reshape", "xtable",
 
 Note that `knitr` rather than `sweave` must be used on compilation, this can be changed by setting RStudio>Preferences...>Sweave>"Weave Rnw files using:" to `knitr`.
 
+The build must be performed twice in order for the citations to work, the first generates a .bbl file, and the second is able to include it.
+
 ## File Descriptions
 
 ### code
