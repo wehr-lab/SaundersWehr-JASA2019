@@ -10,6 +10,8 @@
 
 This repository contains the raw data as well as all analysis, visualization, and typesetting code used to generate the manuscript.
 
+The main manuscript file used to build the document is `manuscript/SaundersWehr_JASA2019.Rnw`
+
 The manuscript can be built with RStudio after installing the requisite packages with:
 
 ```R
