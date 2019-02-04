@@ -31,9 +31,7 @@ The build must be performed twice in order for the citations to work, the first 
 * `psds.m` and `spectrograms.m` - scripts used to generate power spectra and spectrograms
 * `supplemental_plots.R` a script to generate the 'subway plot' in Fig. 1e
 
-### data
-
-#### Trial Data
+### data - Trial Data
 
 **Data Files**
 
@@ -60,13 +58,13 @@ The build must be performed twice in order for the citations to work, the first 
 * "novelnot" - 0 for gentype2==1, 1 for gentype2 %in% c(2,3,4,5)
 * "cohort" - training cohort, see text.
 
-#### Acoustic Data
+### data - Acoustic Data
 
-** Data File **
+**Data File**
 
 * `formants.RData` - acoustic data used in Fig. 5
 
-** Column Descriptions **
+**Column Descriptions**
 
 See above column descriptions for repeated columns
 
@@ -75,13 +73,13 @@ See above column descriptions for repeated columns
 * training - whether a token was a training token for a training cohort, and if so which one
 * distance columns - as described in the text. distances are from locus equation lines, "g1_dist" and etc. are the distances computed from locus equation lines when only cohort 1 training tokens were included, "dist_diff" is the difference of distances, again described in the text.
 
-#### Mouse Data
+### data - Mouse Data
 
-** Data File **
+**Data File**
 
 * `mouse_demographics.RData`
 
-** Column Descriptions **
+**Column Descriptions**
 
 * Status - Nonlearner/Generalizer, whether the mouse reached the generalization task or not
 * Box - training box used
@@ -93,9 +91,9 @@ See above column descriptions for repeated columns
 * StartGen - Date the mouse started the generalization task, if at all
 * DurTillGen - Amount of time spent training before reaching the generalization stage
 
-#### GLMER Models
+#### data - GLMER Models
 
-** Files **
+**Files**
 
 * `lmer1.RData` : `correct ~ (1|mouse)`
 * `lmer2.RData` : `correct ~ gentype2 + (1|mouse)`
@@ -105,8 +103,6 @@ See above column descriptions for repeated columns
 ### Figures
 
 Figures are generated programmatically as "FigureN_render.pdf", and then aesthetic modifications were made to generate "FigureN.pdf".
-
-
 
 
 ## Issues
