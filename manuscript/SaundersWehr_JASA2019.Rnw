@@ -7,7 +7,7 @@
 \usepackage[autostyle, english=american]{csquotes} % Does smart quotations
 \usepackage{tabularx}
 \usepackage{capt-of} % figure captions spanning pages
-\usepackage[usenames, dvipsnames]{color}
+%\usepackage[usenames, dvipsnames]{color}
 \usepackage{setspace}
 \usepackage{todonotes}
 
