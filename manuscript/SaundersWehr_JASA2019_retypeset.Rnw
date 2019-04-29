@@ -123,7 +123,7 @@
 \thanks{wehr@uoregon.edu} 
 \thanks{University of Oregon, Institute of Neuroscience and Department of Psychology, Eugene, OR 97403, United States.} 
 \thanks{Additional thanks to Aldis Weible, Lucas Ott, and Connor O'Sullivan. This material is based upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. 1309047. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.}}
-\date{\href{https://github.com/wehr-lab/SaundersWehr-JASA2019}{Repository version}, compiled \today}
+\date{\small J. Acoust. Soc. Am. \textbf{145}(3) - \href{https://doi.org/10.1121/1.5091776}{doi:10.1121/1.5091776} - \href{https://github.com/wehr-lab/SaundersWehr-JASA2019}{Author typeset version}, compiled \today }
 
 
 
@@ -159,6 +159,7 @@ change_bit <- 1
 #base_dir <- dirname(dirname(rstudioapi::callFun("getActiveDocumentContext")$path))
 #setwd(base_dir)
 base_dir <- dirname(getwd())
+message(base_dir)
 fig_dir <- paste(base_dir, "/figures/", sep="")
 code_dir <- paste(base_dir, "/code/", sep="")
 data_dir <- paste(base_dir, "/data/", sep="")

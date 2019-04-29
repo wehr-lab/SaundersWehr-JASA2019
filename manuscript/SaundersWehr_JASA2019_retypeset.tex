@@ -171,7 +171,7 @@
 \thanks{wehr@uoregon.edu} 
 \thanks{University of Oregon, Institute of Neuroscience and Department of Psychology, Eugene, OR 97403, United States.} 
 \thanks{Additional thanks to Aldis Weible, Lucas Ott, and Connor O'Sullivan. This material is based upon work supported by the National Science Foundation Graduate Research Fellowship Program under Grant No. 1309047. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.}}
-\date{\href{https://github.com/wehr-lab/SaundersWehr-JASA2019}{Repository version}, compiled \today}
+\date{\small J. Acoust. Soc. Am. \textbf{145}(3) - \href{https://doi.org/10.1121/1.5091776}{doi:10.1121/1.5091776} - \href{https://github.com/wehr-lab/SaundersWehr-JASA2019}{Author typeset version}, compiled \today }
 
 
 
@@ -434,7 +434,7 @@ In the generalization task, stimuli from the set of all possible speakers, vowel
 \subsection{Data analysis}
 Data were excluded from days on which a mouse had a $>10\%$ drop in accuracy from their mean performance on the previous day $(44/636 = 7\%$ of sessions$)$. Anecdotally, mice are sensitive to environmental conditions (e.g., thunderstorms), so even though all efforts were made to minimize variation between days, even the best performing mice had "bad days" where they temporarily fell to near-chance performance and exhibited strong response bias. We thus assume these "bad days" were the result of temporary environmental or other performance issues, and were unrelated to the difficulty of the task itself. 
 
-All analyses were performed in R (R version 3.5.1 (2018-07-02))\cite{Team2016} using RStudio (1.1.456)\cite{Team2015}. Generalization performance was modeled using a logistic generalized linear mixed model (GLMM) using the R package "lme4"\cite{Bates2015}. Binary correct/incorrect responses were fit hierarchically to models of increasing complexity (see Table \ref{hiertab}), with a final model consisting of the generalization class (as in Fig. 2a: training tokens, novel tokens from the speakers and vowels in the training set, novel speaker, novel vowel, and novel speaker and vowel) as a fixed effect with random slopes and intercepts nested within each mouse as a random effect. There was no evidence of overdispersion (i.e., deviance $\approx$ degrees of freedom, or less than  $\sim$ 2 times degrees of freedom), and the profile of the model showed that the deviances by each fixed effect were approximately normal. Accordingly, we report Wald confidence intervals. We also computed bootstrapped confidence intervals, which had only minor disagreement with the Wald confidence intervals and agreed with our interpretation in the text.
+All analyses were performed in R (R version 3.5.3 (2019-03-11))\cite{Team2016} using RStudio (1.1.456)\cite{Team2015}. Generalization performance was modeled using a logistic generalized linear mixed model (GLMM) using the R package "lme4"\cite{Bates2015}. Binary correct/incorrect responses were fit hierarchically to models of increasing complexity (see Table \ref{hiertab}), with a final model consisting of the generalization class (as in Fig. 2a: training tokens, novel tokens from the speakers and vowels in the training set, novel speaker, novel vowel, and novel speaker and vowel) as a fixed effect with random slopes and intercepts nested within each mouse as a random effect. There was no evidence of overdispersion (i.e., deviance $\approx$ degrees of freedom, or less than  $\sim$ 2 times degrees of freedom), and the profile of the model showed that the deviances by each fixed effect were approximately normal. Accordingly, we report Wald confidence intervals. We also computed bootstrapped confidence intervals, which had only minor disagreement with the Wald confidence intervals and agreed with our interpretation in the text.
 
 Clustering was performed with the "cluster"\cite{Maechler2017} package. Ward clustering split the mice into two notable clusters, which are plotted in Fig. \ref{heat}.
 
@@ -510,8 +510,8 @@ Generalization & 5 & 6 & 160 (20 training, 140 novel)\\
 \caption{\textbf{hierarchical GLMM:} To reach the appropriate complexity of model, we first modeled correct/incorrect answers as a function of each mouse as a fixed effect (row 1), then added the generalization type (as in Fig. \ref{gen}) as a fixed effect (row 2), and finally modeled generalization type as a fixed effect nested within each mouse as a random effect (row 3). Since the final model had the best fit, it was used in all reported analyses related to the GLMM.}
 %\begin{ruledtabular}
 \begin{tabular}{@{\extracolsep{5pt}} rrrrr}
-% latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Wed Feb 20 12:54:58 2019
+% latex table generated in R 3.5.3 by xtable 1.8-3 package
+% Mon Apr 29 12:11:38 2019
 \begin{tabular}{rrrrr}
   \hline
  & DF & $\chi^2$ & $DF_{\chi^2}$ & Pr($>\chi^2$) \\ 
